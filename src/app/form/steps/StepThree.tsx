@@ -19,7 +19,10 @@ export default function StepThree({ onNext, onBack }: { onNext: () => void, onBa
   })
 
   const onSubmit = (data: StepThreeSchemaType) => {
-    const { confirmPassword, ...rest } = data
+    const { confirmPassword, password ...rest } = data
+    if (password !== confirmPassword) {
+      return;
+    }
     dispatch(updateForm(rest))
     onNext()
   }
