@@ -68,8 +68,8 @@ export default function FormSummary({ onBack, resetStep }: { onBack: () => void,
 
       <Dialog open={showSuccess}>
         <DialogContent>
-          <DialogHeader>
-            <DialogTitle>Form Submitted Successfully 🎉</DialogTitle>
+          <DialogHeader className='my-4'>
+            <DialogTitle className='text-center'>Form Submitted Successfully 🎉</DialogTitle>
           </DialogHeader>
 
           <Button className="w-full mt-4" variant="outline" onClick={() => {

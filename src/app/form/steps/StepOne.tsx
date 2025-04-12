@@ -58,7 +58,9 @@ export default function StepOne({ onNext }: { onNext: () => void }) {
             {errors.phone && <p className="text-red-500 text-sm">{errors.phone.message}</p>}
           </div>
 
-          <Button type="submit" variant="outline" className="w-full">Next</Button>
+          <div className='w-full flex justify-end'>
+            <Button type="submit" variant="outline">Next</Button>
+          </div>
         </CardContent>
       </Card>
     </motion.form>
